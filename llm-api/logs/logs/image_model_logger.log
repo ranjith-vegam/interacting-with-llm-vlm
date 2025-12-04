@@ -1,0 +1,16 @@
+12/04/2025 02:50:33 PM - [      image_model.py::36] -        ERROR -             MainThread  - generate_response - Error in generate_response: llm_chat_async() got an unexpected keyword argument 'image_path'
+12/04/2025 02:51:19 PM - [      image_model.py::36] -        ERROR -             MainThread  - generate_response - Error in generate_response: llm_chat_async() got an unexpected keyword argument 'image_path'
+12/04/2025 02:51:39 PM - [       llm_client.py::430] -         INFO -             MainThread  - chat - Starting chat request(s) to http://10.10.10.23:9992/v1 with model RedHatAI/Qwen2.5-VL-7B-Instruct-quantized.w8a8
+12/04/2025 02:51:39 PM - [       llm_client.py::450] -         INFO -             MainThread  - chat - Processing batch of 1 requests with max_concurrency=10
+12/04/2025 02:51:39 PM - [       llm_client.py::89] -         INFO -             MainThread  - _single_chat_request - Starting request: req_0
+12/04/2025 02:51:40 PM - [       llm_client.py::96] -         INFO -             MainThread  - _single_chat_request - Request completed: req_0
+12/04/2025 02:51:40 PM - [       llm_client.py::140] -         INFO -             MainThread  - _single_chat_request - Chat request successful
+12/04/2025 02:51:40 PM - [       llm_client.py::486] -         INFO -             MainThread  - chat - Batch processing completed, summary: {'total_requests': 1, 'successful': 1, 'failed': 0}
+12/04/2025 02:51:48 PM - [       llm_client.py::531] -         INFO -             MainThread  - chat_stream_async - Starting async streaming request (attempt 1/4)
+12/04/2025 02:51:50 PM - [       llm_client.py::553] -         INFO -             MainThread  - chat_stream_async - Async streaming request completed successfully
+12/04/2025 02:55:32 PM - [       llm_client.py::430] -         INFO -             MainThread  - chat - Starting chat request(s) to http://10.10.10.23:9992/v1 with model RedHatAI/Qwen2.5-VL-7B-Instruct-quantized.w8a8
+12/04/2025 02:55:32 PM - [       llm_client.py::450] -         INFO -             MainThread  - chat - Processing batch of 1 requests with max_concurrency=10
+12/04/2025 02:55:32 PM - [       llm_client.py::89] -         INFO -             MainThread  - _single_chat_request - Starting request: req_0
+12/04/2025 02:55:32 PM - [       llm_client.py::96] -         INFO -             MainThread  - _single_chat_request - Request completed: req_0
+12/04/2025 02:55:32 PM - [       llm_client.py::140] -         INFO -             MainThread  - _single_chat_request - Chat request successful
+12/04/2025 02:55:32 PM - [       llm_client.py::486] -         INFO -             MainThread  - chat - Batch processing completed, summary: {'total_requests': 1, 'successful': 1, 'failed': 0}

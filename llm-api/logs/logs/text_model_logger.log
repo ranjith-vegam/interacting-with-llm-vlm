@@ -1,0 +1,80 @@
+12/04/2025 02:11:57 PM - [       llm_client.py::430] -         INFO -    AnyIO worker thread  - chat - Starting chat request(s) to  with model Qwen/Qwen3-30B-A3B-Instruct-2507-FP8
+12/04/2025 02:11:57 PM - [       llm_client.py::450] -         INFO -    AnyIO worker thread  - chat - Processing batch of 1 requests with max_concurrency=unlimited
+12/04/2025 02:11:57 PM - [       llm_client.py::89] -         INFO -    AnyIO worker thread  - _single_chat_request - Starting request: req_0
+12/04/2025 02:11:59 PM - [       llm_client.py::167] -      WARNING -    AnyIO worker thread  - _single_chat_request - Retryable error on attempt 1, retrying in 1.0s
+12/04/2025 02:12:00 PM - [       llm_client.py::89] -         INFO -    AnyIO worker thread  - _single_chat_request - Starting request: req_0
+12/04/2025 02:12:01 PM - [       llm_client.py::167] -      WARNING -    AnyIO worker thread  - _single_chat_request - Retryable error on attempt 2, retrying in 2.1s
+12/04/2025 02:12:03 PM - [       llm_client.py::89] -         INFO -    AnyIO worker thread  - _single_chat_request - Starting request: req_0
+12/04/2025 02:12:04 PM - [       llm_client.py::167] -      WARNING -    AnyIO worker thread  - _single_chat_request - Retryable error on attempt 3, retrying in 4.2s
+12/04/2025 02:12:08 PM - [       llm_client.py::89] -         INFO -    AnyIO worker thread  - _single_chat_request - Starting request: req_0
+12/04/2025 02:12:10 PM - [       llm_client.py::155] -        ERROR -    AnyIO worker thread  - _single_chat_request - Chat request failed after 4 attempts
+12/04/2025 02:12:10 PM - [       llm_client.py::376] -        ERROR -    AnyIO worker thread  - _execute_request - Request req_0 failed: APIConnectionError: Connection error.
+12/04/2025 02:12:10 PM - [       llm_client.py::486] -         INFO -    AnyIO worker thread  - chat - Batch processing completed, summary: {'total_requests': 1, 'successful': 0, 'failed': 1}
+12/04/2025 02:12:10 PM - [       llm_client.py::490] -        ERROR -    AnyIO worker thread  - chat - All requests in batch failed
+12/04/2025 02:12:10 PM - [       text_model.py::52] -        ERROR -    AnyIO worker thread  - generate_response_stream - Error in generate_response_stream: All requests in the batch failed
+12/04/2025 02:14:31 PM - [       llm_client.py::430] -         INFO -    AnyIO worker thread  - chat - Starting chat request(s) to  with model Qwen/Qwen3-30B-A3B-Instruct-2507-FP8
+12/04/2025 02:14:31 PM - [       llm_client.py::450] -         INFO -    AnyIO worker thread  - chat - Processing batch of 1 requests with max_concurrency=unlimited
+12/04/2025 02:14:31 PM - [       llm_client.py::89] -         INFO -    AnyIO worker thread  - _single_chat_request - Starting request: req_0
+12/04/2025 02:14:32 PM - [       llm_client.py::167] -      WARNING -    AnyIO worker thread  - _single_chat_request - Retryable error on attempt 1, retrying in 1.0s
+12/04/2025 02:14:33 PM - [       llm_client.py::89] -         INFO -    AnyIO worker thread  - _single_chat_request - Starting request: req_0
+12/04/2025 02:14:34 PM - [       llm_client.py::167] -      WARNING -    AnyIO worker thread  - _single_chat_request - Retryable error on attempt 2, retrying in 2.1s
+12/04/2025 02:14:37 PM - [       llm_client.py::89] -         INFO -    AnyIO worker thread  - _single_chat_request - Starting request: req_0
+12/04/2025 02:14:38 PM - [       llm_client.py::167] -      WARNING -    AnyIO worker thread  - _single_chat_request - Retryable error on attempt 3, retrying in 4.2s
+12/04/2025 02:14:53 PM - [       llm_client.py::430] -         INFO -    AnyIO worker thread  - chat - Starting chat request(s) to  with model Qwen/Qwen3-30B-A3B-Instruct-2507-FP8
+12/04/2025 02:14:53 PM - [       llm_client.py::450] -         INFO -    AnyIO worker thread  - chat - Processing batch of 1 requests with max_concurrency=unlimited
+12/04/2025 02:14:53 PM - [       llm_client.py::89] -         INFO -    AnyIO worker thread  - _single_chat_request - Starting request: req_0
+12/04/2025 02:14:55 PM - [       llm_client.py::167] -      WARNING -    AnyIO worker thread  - _single_chat_request - Retryable error on attempt 1, retrying in 1.0s
+12/04/2025 02:14:56 PM - [       llm_client.py::89] -         INFO -    AnyIO worker thread  - _single_chat_request - Starting request: req_0
+12/04/2025 02:14:57 PM - [       llm_client.py::167] -      WARNING -    AnyIO worker thread  - _single_chat_request - Retryable error on attempt 2, retrying in 2.1s
+12/04/2025 02:14:59 PM - [       llm_client.py::89] -         INFO -    AnyIO worker thread  - _single_chat_request - Starting request: req_0
+12/04/2025 02:15:00 PM - [       llm_client.py::167] -      WARNING -    AnyIO worker thread  - _single_chat_request - Retryable error on attempt 3, retrying in 4.2s
+12/04/2025 02:15:05 PM - [       llm_client.py::89] -         INFO -    AnyIO worker thread  - _single_chat_request - Starting request: req_0
+12/04/2025 02:15:06 PM - [       llm_client.py::155] -        ERROR -    AnyIO worker thread  - _single_chat_request - Chat request failed after 4 attempts
+12/04/2025 02:15:06 PM - [       llm_client.py::376] -        ERROR -    AnyIO worker thread  - _execute_request - Request req_0 failed: APIConnectionError: Connection error.
+12/04/2025 02:15:06 PM - [       llm_client.py::486] -         INFO -    AnyIO worker thread  - chat - Batch processing completed, summary: {'total_requests': 1, 'successful': 0, 'failed': 1}
+12/04/2025 02:15:06 PM - [       llm_client.py::490] -        ERROR -    AnyIO worker thread  - chat - All requests in batch failed
+12/04/2025 02:15:06 PM - [       text_model.py::52] -        ERROR -    AnyIO worker thread  - generate_response_stream - Error in generate_response_stream: All requests in the batch failed
+12/04/2025 02:42:30 PM - [       text_model.py::32] -        ERROR -             MainThread  - generate_response - Error in generate_response: asyncio.run() cannot be called from a running event loop
+12/04/2025 02:43:45 PM - [       text_model.py::32] -        ERROR -             MainThread  - generate_response - Error in generate_response: asyncio.run() cannot be called from a running event loop
+12/04/2025 02:45:20 PM - [       text_model.py::32] -        ERROR -             MainThread  - generate_response - Error in generate_response: asyncio.run() cannot be called from a running event loop
+12/04/2025 02:47:43 PM - [       text_model.py::32] -        ERROR -             MainThread  - generate_response - Error in generate_response: asyncio.run() cannot be called from a running event loop
+12/04/2025 02:48:12 PM - [       llm_client.py::430] -         INFO -             MainThread  - chat - Starting chat request(s) to http://10.10.10.23:9992/v1 with model RedHatAI/Qwen2.5-VL-7B-Instruct-quantized.w8a8
+12/04/2025 02:48:12 PM - [       llm_client.py::450] -         INFO -             MainThread  - chat - Processing batch of 1 requests with max_concurrency=10
+12/04/2025 02:48:12 PM - [       llm_client.py::89] -         INFO -             MainThread  - _single_chat_request - Starting request: req_0
+12/04/2025 02:48:14 PM - [       llm_client.py::96] -         INFO -             MainThread  - _single_chat_request - Request completed: req_0
+12/04/2025 02:48:14 PM - [       llm_client.py::140] -         INFO -             MainThread  - _single_chat_request - Chat request successful
+12/04/2025 02:48:14 PM - [       llm_client.py::486] -         INFO -             MainThread  - chat - Batch processing completed, summary: {'total_requests': 1, 'successful': 1, 'failed': 0}
+12/04/2025 02:48:35 PM - [       text_model.py::62] -        ERROR -             MainThread  - generate_response_stream - Error in generate_response_stream: llm_streaming_chat() got an unexpected keyword argument 'max_concurrency'
+12/04/2025 02:49:06 PM - [       text_model.py::62] -        ERROR -             MainThread  - generate_response_stream - Error in generate_response_stream: llm_streaming_chat() got an unexpected keyword argument 'max_concurrency'
+12/04/2025 02:49:35 PM - [       llm_client.py::531] -         INFO -             MainThread  - chat_stream_async - Starting async streaming request (attempt 1/4)
+12/04/2025 02:49:36 PM - [       llm_client.py::553] -         INFO -             MainThread  - chat_stream_async - Async streaming request completed successfully
+12/04/2025 02:49:47 PM - [       llm_client.py::430] -         INFO -             MainThread  - chat - Starting chat request(s) to http://10.10.10.23:9992/v1 with model RedHatAI/Qwen2.5-VL-7B-Instruct-quantized.w8a8
+12/04/2025 02:49:47 PM - [       llm_client.py::450] -         INFO -             MainThread  - chat - Processing batch of 1 requests with max_concurrency=10
+12/04/2025 02:49:47 PM - [       llm_client.py::89] -         INFO -             MainThread  - _single_chat_request - Starting request: req_0
+12/04/2025 02:49:47 PM - [       llm_client.py::96] -         INFO -             MainThread  - _single_chat_request - Request completed: req_0
+12/04/2025 02:49:47 PM - [       llm_client.py::140] -         INFO -             MainThread  - _single_chat_request - Chat request successful
+12/04/2025 02:49:47 PM - [       llm_client.py::486] -         INFO -             MainThread  - chat - Batch processing completed, summary: {'total_requests': 1, 'successful': 1, 'failed': 0}
+12/04/2025 02:53:50 PM - [       llm_client.py::430] -         INFO -             MainThread  - chat - Starting chat request(s) to http://10.10.10.23:9992/v1 with model RedHatAI/Qwen2.5-VL-7B-Instruct-quantized.w8a8
+12/04/2025 02:53:50 PM - [       llm_client.py::450] -         INFO -             MainThread  - chat - Processing batch of 1 requests with max_concurrency=10
+12/04/2025 02:53:50 PM - [       llm_client.py::89] -         INFO -             MainThread  - _single_chat_request - Starting request: req_0
+12/04/2025 02:53:50 PM - [       llm_client.py::96] -         INFO -             MainThread  - _single_chat_request - Request completed: req_0
+12/04/2025 02:53:50 PM - [       llm_client.py::140] -         INFO -             MainThread  - _single_chat_request - Chat request successful
+12/04/2025 02:53:50 PM - [       llm_client.py::486] -         INFO -             MainThread  - chat - Batch processing completed, summary: {'total_requests': 1, 'successful': 1, 'failed': 0}
+12/04/2025 02:54:25 PM - [       llm_client.py::430] -         INFO -             MainThread  - chat - Starting chat request(s) to http://10.10.10.23:9992/v1 with model RedHatAI/Qwen2.5-VL-7B-Instruct-quantized.w8a8
+12/04/2025 02:54:25 PM - [       llm_client.py::450] -         INFO -             MainThread  - chat - Processing batch of 1 requests with max_concurrency=10
+12/04/2025 02:54:25 PM - [       llm_client.py::89] -         INFO -             MainThread  - _single_chat_request - Starting request: req_0
+12/04/2025 02:54:25 PM - [       llm_client.py::96] -         INFO -             MainThread  - _single_chat_request - Request completed: req_0
+12/04/2025 02:54:25 PM - [       llm_client.py::140] -         INFO -             MainThread  - _single_chat_request - Chat request successful
+12/04/2025 02:54:25 PM - [       llm_client.py::486] -         INFO -             MainThread  - chat - Batch processing completed, summary: {'total_requests': 1, 'successful': 1, 'failed': 0}
+12/04/2025 03:00:32 PM - [       llm_client.py::430] -         INFO -             MainThread  - chat - Starting chat request(s) to http://10.10.10.23:9992/v1 with model RedHatAI/Qwen2.5-VL-7B-Instruct-quantized.w8a8
+12/04/2025 03:00:32 PM - [       llm_client.py::450] -         INFO -             MainThread  - chat - Processing batch of 1 requests with max_concurrency=10
+12/04/2025 03:00:32 PM - [       llm_client.py::89] -         INFO -             MainThread  - _single_chat_request - Starting request: req_0
+12/04/2025 03:00:32 PM - [       llm_client.py::96] -         INFO -             MainThread  - _single_chat_request - Request completed: req_0
+12/04/2025 03:00:32 PM - [       llm_client.py::140] -         INFO -             MainThread  - _single_chat_request - Chat request successful
+12/04/2025 03:00:32 PM - [       llm_client.py::486] -         INFO -             MainThread  - chat - Batch processing completed, summary: {'total_requests': 1, 'successful': 1, 'failed': 0}
+12/04/2025 03:00:43 PM - [       llm_client.py::430] -         INFO -             MainThread  - chat - Starting chat request(s) to http://10.10.10.23:9992/v1 with model RedHatAI/Qwen2.5-VL-7B-Instruct-quantized.w8a8
+12/04/2025 03:00:43 PM - [       llm_client.py::450] -         INFO -             MainThread  - chat - Processing batch of 1 requests with max_concurrency=10
+12/04/2025 03:00:43 PM - [       llm_client.py::89] -         INFO -             MainThread  - _single_chat_request - Starting request: req_0
+12/04/2025 03:00:44 PM - [       llm_client.py::96] -         INFO -             MainThread  - _single_chat_request - Request completed: req_0
+12/04/2025 03:00:44 PM - [       llm_client.py::140] -         INFO -             MainThread  - _single_chat_request - Chat request successful
+12/04/2025 03:00:44 PM - [       llm_client.py::486] -         INFO -             MainThread  - chat - Batch processing completed, summary: {'total_requests': 1, 'successful': 1, 'failed': 0}

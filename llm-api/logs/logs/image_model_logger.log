@@ -14,3 +14,65 @@
 12/04/2025 02:55:32 PM - [       llm_client.py::96] -         INFO -             MainThread  - _single_chat_request - Request completed: req_0
 12/04/2025 02:55:32 PM - [       llm_client.py::140] -         INFO -             MainThread  - _single_chat_request - Chat request successful
 12/04/2025 02:55:32 PM - [       llm_client.py::486] -         INFO -             MainThread  - chat - Batch processing completed, summary: {'total_requests': 1, 'successful': 1, 'failed': 0}
+12/04/2025 03:15:40 PM - [       llm_client.py::531] -         INFO -             MainThread  - chat_stream_async - Starting async streaming request (attempt 1/4)
+12/04/2025 03:15:40 PM - [       llm_client.py::553] -         INFO -             MainThread  - chat_stream_async - Async streaming request completed successfully
+12/04/2025 03:16:00 PM - [       llm_client.py::430] -         INFO -             MainThread  - chat - Starting chat request(s) to http://10.10.10.23:9992/v1 with model RedHatAI/Qwen2.5-VL-7B-Instruct-quantized.w8a8
+12/04/2025 03:16:00 PM - [       llm_client.py::450] -         INFO -             MainThread  - chat - Processing batch of 1 requests with max_concurrency=10
+12/04/2025 03:16:00 PM - [       llm_client.py::89] -         INFO -             MainThread  - _single_chat_request - Starting request: req_0
+12/04/2025 03:16:00 PM - [       llm_client.py::96] -         INFO -             MainThread  - _single_chat_request - Request completed: req_0
+12/04/2025 03:16:00 PM - [       llm_client.py::140] -         INFO -             MainThread  - _single_chat_request - Chat request successful
+12/04/2025 03:16:00 PM - [       llm_client.py::486] -         INFO -             MainThread  - chat - Batch processing completed, summary: {'total_requests': 1, 'successful': 1, 'failed': 0}
+12/04/2025 03:16:11 PM - [       llm_client.py::430] -         INFO -             MainThread  - chat - Starting chat request(s) to http://10.10.10.23:9992/v1 with model RedHatAI/Qwen2.5-VL-7B-Instruct-quantized.w8a8
+12/04/2025 03:16:11 PM - [       llm_client.py::450] -         INFO -             MainThread  - chat - Processing batch of 1 requests with max_concurrency=10
+12/04/2025 03:16:11 PM - [       llm_client.py::89] -         INFO -             MainThread  - _single_chat_request - Starting request: req_0
+12/04/2025 03:16:49 PM - [       llm_client.py::96] -         INFO -             MainThread  - _single_chat_request - Request completed: req_0
+12/04/2025 03:16:49 PM - [       llm_client.py::140] -         INFO -             MainThread  - _single_chat_request - Chat request successful
+12/04/2025 03:16:49 PM - [       llm_client.py::486] -         INFO -             MainThread  - chat - Batch processing completed, summary: {'total_requests': 1, 'successful': 1, 'failed': 0}
+12/04/2025 03:17:41 PM - [       llm_client.py::430] -         INFO -             MainThread  - chat - Starting chat request(s) to http://10.10.10.23:9992/v1 with model RedHatAI/Qwen2.5-VL-7B-Instruct-quantized.w8a8
+12/04/2025 03:17:41 PM - [       llm_client.py::450] -         INFO -             MainThread  - chat - Processing batch of 1 requests with max_concurrency=10
+12/04/2025 03:17:41 PM - [       llm_client.py::89] -         INFO -             MainThread  - _single_chat_request - Starting request: req_0
+12/04/2025 03:18:19 PM - [       llm_client.py::96] -         INFO -             MainThread  - _single_chat_request - Request completed: req_0
+12/04/2025 03:18:19 PM - [       llm_client.py::140] -         INFO -             MainThread  - _single_chat_request - Chat request successful
+12/04/2025 03:18:19 PM - [       llm_client.py::486] -         INFO -             MainThread  - chat - Batch processing completed, summary: {'total_requests': 1, 'successful': 1, 'failed': 0}
+12/04/2025 03:22:01 PM - [       llm_client.py::430] -         INFO -             MainThread  - chat - Starting chat request(s) to http://10.10.10.23:9992/v1 with model RedHatAI/Qwen2.5-VL-7B-Instruct-quantized.w8a8
+12/04/2025 03:22:01 PM - [       llm_client.py::450] -         INFO -             MainThread  - chat - Processing batch of 1 requests with max_concurrency=10
+12/04/2025 03:22:01 PM - [       llm_client.py::89] -         INFO -             MainThread  - _single_chat_request - Starting request: req_0
+12/04/2025 03:22:38 PM - [       llm_client.py::96] -         INFO -             MainThread  - _single_chat_request - Request completed: req_0
+12/04/2025 03:22:38 PM - [       llm_client.py::140] -         INFO -             MainThread  - _single_chat_request - Chat request successful
+12/04/2025 03:22:38 PM - [       llm_client.py::486] -         INFO -             MainThread  - chat - Batch processing completed, summary: {'total_requests': 1, 'successful': 1, 'failed': 0}
+12/04/2025 03:23:06 PM - [       llm_client.py::430] -         INFO -             MainThread  - chat - Starting chat request(s) to http://10.10.10.23:9992/v1 with model RedHatAI/Qwen2.5-VL-7B-Instruct-quantized.w8a8
+12/04/2025 03:23:06 PM - [       llm_client.py::450] -         INFO -             MainThread  - chat - Processing batch of 1 requests with max_concurrency=10
+12/04/2025 03:23:06 PM - [       llm_client.py::89] -         INFO -             MainThread  - _single_chat_request - Starting request: req_0
+12/04/2025 03:23:44 PM - [       llm_client.py::96] -         INFO -             MainThread  - _single_chat_request - Request completed: req_0
+12/04/2025 03:23:44 PM - [       llm_client.py::140] -         INFO -             MainThread  - _single_chat_request - Chat request successful
+12/04/2025 03:23:44 PM - [       llm_client.py::486] -         INFO -             MainThread  - chat - Batch processing completed, summary: {'total_requests': 1, 'successful': 1, 'failed': 0}
+12/04/2025 03:26:49 PM - [       llm_client.py::430] -         INFO -             MainThread  - chat - Starting chat request(s) to http://10.10.10.100:9123/v1 with model RedHatAI/Qwen2.5-VL-7B-Instruct-quantized.w8a8
+12/04/2025 03:26:49 PM - [       llm_client.py::450] -         INFO -             MainThread  - chat - Processing batch of 1 requests with max_concurrency=10
+12/04/2025 03:26:49 PM - [       llm_client.py::89] -         INFO -             MainThread  - _single_chat_request - Starting request: req_0
+12/04/2025 03:27:50 PM - [       llm_client.py::96] -         INFO -             MainThread  - _single_chat_request - Request completed: req_0
+12/04/2025 03:27:50 PM - [       llm_client.py::140] -         INFO -             MainThread  - _single_chat_request - Chat request successful
+12/04/2025 03:27:50 PM - [       llm_client.py::486] -         INFO -             MainThread  - chat - Batch processing completed, summary: {'total_requests': 1, 'successful': 1, 'failed': 0}
+12/04/2025 03:29:51 PM - [       llm_client.py::430] -         INFO -             MainThread  - chat - Starting chat request(s) to http://10.10.10.100:9123/v1 with model RedHatAI/Qwen2.5-VL-7B-Instruct-quantized.w8a8
+12/04/2025 03:29:51 PM - [       llm_client.py::450] -         INFO -             MainThread  - chat - Processing batch of 1 requests with max_concurrency=10
+12/04/2025 03:29:51 PM - [       llm_client.py::89] -         INFO -             MainThread  - _single_chat_request - Starting request: req_0
+12/04/2025 03:29:52 PM - [       llm_client.py::96] -         INFO -             MainThread  - _single_chat_request - Request completed: req_0
+12/04/2025 03:29:52 PM - [       llm_client.py::140] -         INFO -             MainThread  - _single_chat_request - Chat request successful
+12/04/2025 03:29:52 PM - [       llm_client.py::486] -         INFO -             MainThread  - chat - Batch processing completed, summary: {'total_requests': 1, 'successful': 1, 'failed': 0}
+12/04/2025 04:17:53 PM - [       llm_client.py::430] -         INFO -             MainThread  - chat - Starting chat request(s) to http://10.10.10.100:9123/v1 with model RedHatAI/Qwen2.5-VL-7B-Instruct-quantized.w8a8
+12/04/2025 04:17:53 PM - [       llm_client.py::450] -         INFO -             MainThread  - chat - Processing batch of 1 requests with max_concurrency=10
+12/04/2025 04:17:53 PM - [       llm_client.py::89] -         INFO -             MainThread  - _single_chat_request - Starting request: req_0
+12/04/2025 04:17:54 PM - [       llm_client.py::96] -         INFO -             MainThread  - _single_chat_request - Request completed: req_0
+12/04/2025 04:17:54 PM - [       llm_client.py::140] -         INFO -             MainThread  - _single_chat_request - Chat request successful
+12/04/2025 04:17:54 PM - [       llm_client.py::486] -         INFO -             MainThread  - chat - Batch processing completed, summary: {'total_requests': 1, 'successful': 1, 'failed': 0}
+12/04/2025 04:18:01 PM - [       llm_client.py::531] -         INFO -             MainThread  - chat_stream_async - Starting async streaming request (attempt 1/4)
+12/04/2025 04:18:02 PM - [       llm_client.py::553] -         INFO -             MainThread  - chat_stream_async - Async streaming request completed successfully
+12/04/2025 04:27:52 PM - [       llm_client.py::430] -         INFO -             MainThread  - chat - Starting chat request(s) to http://10.10.10.100:9123/v1 with model RedHatAI/Qwen2.5-VL-7B-Instruct-quantized.w8a8
+12/04/2025 04:27:52 PM - [       llm_client.py::450] -         INFO -             MainThread  - chat - Processing batch of 1 requests with max_concurrency=10
+12/04/2025 04:27:52 PM - [       llm_client.py::89] -         INFO -             MainThread  - _single_chat_request - Starting request: req_0
+12/04/2025 04:27:52 PM - [       llm_client.py::96] -         INFO -             MainThread  - _single_chat_request - Request completed: req_0
+12/04/2025 04:27:52 PM - [       llm_client.py::140] -         INFO -             MainThread  - _single_chat_request - Chat request successful
+12/04/2025 04:27:52 PM - [       llm_client.py::486] -         INFO -             MainThread  - chat - Batch processing completed, summary: {'total_requests': 1, 'successful': 1, 'failed': 0}
+12/04/2025 04:27:55 PM - [       llm_client.py::531] -         INFO -             MainThread  - chat_stream_async - Starting async streaming request (attempt 1/4)
+12/04/2025 04:27:56 PM - [       llm_client.py::553] -         INFO -             MainThread  - chat_stream_async - Async streaming request completed successfully
+12/04/2025 04:39:15 PM - [       llm_client.py::531] -         INFO -             MainThread  - chat_stream_async - Starting async streaming request (attempt 1/4)
+12/04/2025 04:39:16 PM - [       llm_client.py::553] -         INFO -             MainThread  - chat_stream_async - Async streaming request completed successfully

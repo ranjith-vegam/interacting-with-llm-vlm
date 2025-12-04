@@ -59,5 +59,8 @@ app.add_middleware(
 )
 
 # Include routers
+from src.api.routes.health import router as health_router
 from src.api.routes.model_inference_endpoints import router as model_router
+
+app.include_router(health_router)
 app.include_router(model_router)

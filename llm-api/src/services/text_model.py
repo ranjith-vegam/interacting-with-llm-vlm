@@ -9,7 +9,7 @@ class TextModel:
     
     def _merge_args(self, override_args: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
         """Merge default settings with override arguments."""
-        default_args = self.settings.llm_args.model_dump()
+        default_args = self.settings.llm_args.model_dump(exclude_none=True)
         if override_args:
             # Filter out None values from override_args
             clean_overrides = {k: v for k, v in override_args.items() if v is not None}

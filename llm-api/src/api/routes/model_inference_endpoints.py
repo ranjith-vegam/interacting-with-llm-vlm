@@ -36,22 +36,22 @@ class TextRequest(BaseModel):
     temperature: Optional[float] = Field(
         None, 
         ge=0.0, 
-        le=2.0,
+        le=1.0,
         description="Controls randomness in responses. Lower values (0.0-0.5) make output more focused and deterministic. Higher values (0.5-2.0) make it more creative and varied. Default is set in configuration.",
-        examples=[0.7]
+        examples=[0.0]
     )
     max_tokens: Optional[int] = Field(
         None,
         gt=0,
         description="Maximum length of the response in tokens (roughly 4 characters per token). Limits how long the AI's answer can be. Default is set in configuration.",
-        examples=[2048]
+        examples=[256]
     )
     top_p: Optional[float] = Field(
         None,
         ge=0.0,
         le=1.0,
         description="Controls diversity via nucleus sampling. Lower values make responses more focused, higher values more diverse. Alternative to temperature. Default is set in configuration.",
-        examples=[0.9]
+        examples=[1.0]
     )
     frequency_penalty: Optional[float] = Field(
         None,
@@ -76,8 +76,8 @@ class TextRequest(BaseModel):
         None, 
         description="Specify the format of the response. Examples: {'type': 'json_object'} for JSON, {'type': 'text'} for plain text, or use json_schema for structured output. Default is set in configuration.",
         examples=[
-            {"type": "json_object"},
             {"type": "text"},
+            {"type": "json_object"},
             {
                 "type": "json_schema",
                 "json_schema": {
@@ -266,13 +266,13 @@ Common use cases:
 async def generate_image_description(
     image: UploadFile = File(..., description="The image file to analyze (JPEG, PNG, etc.)"),
     prompt: str = Form("Describe this image", description="Your question or instruction about the image"),
-    temperature: Optional[float] = Form(None, ge=0.0, le=2.0, description="Controls creativity (0.0-2.0). Lower = focused, Higher = creative."),
-    max_tokens: Optional[int] = Form(None, gt=0, description="Maximum response length in tokens."),
-    top_p: Optional[float] = Form(None, ge=0.0, le=1.0, description="Controls diversity (0.0-1.0)."),
-    frequency_penalty: Optional[float] = Form(None, ge=-2.0, le=2.0, description="Reduces repetition (-2.0 to 2.0)."),
-    presence_penalty: Optional[float] = Form(None, ge=-2.0, le=2.0, description="Encourages new topics (-2.0 to 2.0)."),
-    seed: Optional[int] = Form(None, description="Seed for reproducible outputs."),
-    response_format: Optional[Json] = Form(None, description="Response format (e.g., JSON).")
+    temperature: Optional[float] = Form(None, ge=0.0, le=1.0, description="Controls creativity (0.0-2.0). Lower = focused, Higher = creative.", examples=[0.0]),
+    max_tokens: Optional[int] = Form(None, gt=0, description="Maximum response length in tokens.", examples=[256]),
+    top_p: Optional[float] = Form(None, ge=0.0, le=1.0, description="Controls diversity (0.0-1.0).", examples=[1.0]),
+    frequency_penalty: Optional[float] = Form(None, ge=-2.0, le=2.0, description="Reduces repetition (-2.0 to 2.0).", examples=[0.0]),
+    presence_penalty: Optional[float] = Form(None, ge=-2.0, le=2.0, description="Encourages new topics (-2.0 to 2.0).", examples=[0.0]),
+    seed: Optional[int] = Form(None, description="Seed for reproducible outputs.", examples=[42]),
+    response_format: Optional[Json] = Form(None, description="Response format", examples=[{"type": "text"}])
 ):
     temp_file_path = None
     try:
@@ -333,13 +333,13 @@ Common use cases:
 async def stream_image_description(
     image: UploadFile = File(..., description="The image file to analyze (JPEG, PNG, etc.)"),
     prompt: str = Form("Describe this image", description="Your question or instruction about the image"),
-    temperature: Optional[float] = Form(None, ge=0.0, le=2.0, description="Controls creativity (0.0-2.0)."),
-    max_tokens: Optional[int] = Form(None, gt=0, description="Maximum response length in tokens."),
-    top_p: Optional[float] = Form(None, ge=0.0, le=1.0, description="Controls diversity (0.0-1.0)."),
-    frequency_penalty: Optional[float] = Form(None, ge=-2.0, le=2.0, description="Reduces repetition (-2.0 to 2.0)."),
-    presence_penalty: Optional[float] = Form(None, ge=-2.0, le=2.0, description="Encourages new topics (-2.0 to 2.0)."),
-    seed: Optional[int] = Form(None, description="Seed for reproducible outputs."),
-    response_format: Optional[Json] = Form(None, description="Response format (e.g., JSON).")
+    temperature: Optional[float] = Form(None, ge=0.0, le=1.0, description="Controls creativity (0.0-2.0).", examples=[0.0]),
+    max_tokens: Optional[int] = Form(None, gt=0, description="Maximum response length in tokens.", examples=[256]),
+    top_p: Optional[float] = Form(None, ge=0.0, le=1.0, description="Controls diversity (0.0-1.0).", examples=[1.0]),
+    frequency_penalty: Optional[float] = Form(None, ge=-2.0, le=2.0, description="Reduces repetition (-2.0 to 2.0).", examples=[0.0]),
+    presence_penalty: Optional[float] = Form(None, ge=-2.0, le=2.0, description="Encourages new topics (-2.0 to 2.0).", examples=[0.0]),
+    seed: Optional[int] = Form(None, description="Seed for reproducible outputs.", examples=[42]),
+    response_format: Optional[Json] = Form(None, description="Response format (e.g., JSON).", examples=[{"type": "text"}])
 ):
     temp_file_path = None
     try:
